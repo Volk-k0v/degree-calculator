@@ -1,34 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Degree Calculator</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Degree Calculator</h1>
-  <form id="degreeForm">
-    <label for="chemAnalytique">Chimie Analytique:</label>
-    <input type="number" id="chemAnalytique" min="0" max="20" required>
-  
-    <label for="chemTherapeutique">Chimie Thérapeutique:</label>
-    <input type="number" id="chemTherapeutique" min="0" max="20" required>
-  
-    <label for="pharmacologie">Pharmacologie:</label>
-    <input type="number" id="pharmacologie" min="0" max="20" required>
-  
-    <label for="pharmacieGalenique">Pharmacie Galénique:</label>
-    <input type="number" id="pharmacieGalenique" min="0" max="20" required>
-  
-    <label for="pharmacognostie">Pharmacognostie:</label>
-    <input type="number" id="pharmacognostie" min="0" max="20" required>
-  
-    <label for="semiologie">Sémiologie:</label>
-    <input type="number" id="semiologie" min="0" max="20" required>
-  
-    <button type="button" onclick="calculateDegree()">Calculate Degree</button>
-  </form>
-
-  <p id="result"></p>
+  <div class="container">
+    <h1>Degree Calculator</h1>
+    <div class="input-container">
+      <div class="input-group">
+        <label for="chemAnalytique">Chimie Analytique</label>
+        <input type="number" id="chemAnalytique" min="0" max="20" required>
+      </div>
+      <div class="input-group">
+        <label for="chemTherapeutique">Chimie Thérapeutique</label>
+        <input type="number" id="chemTherapeutique" min="0" max="20" required>
+      </div>
+      <div class="input-group">
+        <label for="semiologie">Sémiologie</label>
+        <input type="number" id="semiologie" min="0" max="20" required>
+      </div>
+    </div>
+    <div class="input-container">
+      <div class="input-group">
+        <label for="pharmacieGalenique">Pharmacie Galénique</label>
+        <input type="number" id="pharmacieGalenique" min="0" max="20" required>
+      </div>
+      <div class="input-group">
+        <label for="pharmacognosie">Pharmacognosie</label>
+        <input type="number" id="pharmacognosie" min="0" max="20" required>
+      </div>
+      <div class="input-group">
+        <label for="pharmacologie">Pharmacologie</label>
+        <input type="number" id="pharmacologie" min="0" max="20" required>
+      </div>
+    </div>
+    <button type="button" onclick="calculateDegree()">Calculate</button>
+    <p id="result"></p>
 
   <script src="script.js"></script>
 </body>
