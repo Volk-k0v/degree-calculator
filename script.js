@@ -3,7 +3,7 @@ function calculateDegree() {
     const chemTherapeutique = parseFloat(document.getElementById("chemTherapeutique").value);
     const pharmacologie = parseFloat(document.getElementById("pharmacologie").value);
     const pharmacieGalenique = parseFloat(document.getElementById("pharmacieGalenique").value);
-    const pharmacognosie = parseFloat(document.getElementById("pharmacognostie").value);
+    const pharmacognosie = parseFloat(document.getElementById("pharmacognosie").value);
     const semiologie = parseFloat(document.getElementById("semiologie").value);
   
     const totalPoints = (chemAnalytique + chemTherapeutique + pharmacologie + pharmacieGalenique + pharmacognosie + semiologie) * 2;
